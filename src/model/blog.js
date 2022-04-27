@@ -3,7 +3,7 @@ const Object_id = mongoose.Types.ObjectId
 let newBlog = new mongoose.Schema({
     title: { type: String, required: true },
     body: { type: String, required: true },
-    autherId: {
+    authorId: {
         type: Object_id,
         required: true,
         ref: "Author"
