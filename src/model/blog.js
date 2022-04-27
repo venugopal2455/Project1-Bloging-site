@@ -6,7 +6,7 @@ let newBlog = new mongoose.Schema({
     autherId: {
         type: Object_id,
         required: true,
-        ref: "Auther"
+        ref: "Author"
     },
     tags:[{type:String,required:true}],
     category: {type:String,required:true},
